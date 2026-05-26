@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 90vh;
+}
+
+/* ESQUERDA */
+.media {
+  background: linear-gradient(135deg, #b30000, #ff3b3b);
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.play {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.media h2 {
+  font-size: 28px;
+}
+
+.logo {
+  opacity: 0.8;
+}
+
+/* CENTRO */
+.center {
+  background: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* muda isso */
+  height: 100%;
+}
+
+.center h3 {
+  color: #999;
+  letter-spacing: 2px;
+}
+
+.senha {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.guiche {
+  font-size: 40px; /* maior */
+  color: #d10000;
+  font-weight: bold;
+}
+
+
+.mensagem {
+  color: #777;
+}
+
+/* DIREITA */
+.right {
+  background: #fafafa;
+  padding: 30px;
+}
+
+.right h3 {
+  background: #d10000;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  color: #999;
+}
+
+td {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+  color: #d10000;
+  font-weight: bold;
+}
+
+/* RODAPÉ */
+.footer {
+  height: 10vh;
+  background: #d10000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 18px;
+}
+
+.media {
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+/* vídeo ocupa tudo */
+.video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+/* camada escura por cima (para legibilidade) */
+.media::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+/* botão para senha*/
+
+.btn-chamar {
+  margin-top: 15px;
+  padding: 15px 20px;
+  font-size: 18px;
+  background: #d10000;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 250px;
+  align-items: center
+  display block;
+  margin: 20px auto;;
+}
+
+.btn-chamar:hover {
+  background: #a80000;
+  transform: scale(1.05);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel de Senha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LADO ESQUERDO (MÍDIA) -->
+  <div class="media">
+  
+  <video autoplay muted loop class="video-bg">
+    <source src="midia/midia.mp4" type="video/mp4">
+  </video>
+  </div>
+
+  <!-- CENTRO -->
+  <div class="center">
+    <h3>SENHA</h3>
+    <div class="senha" id="senha">A123</div>
+
+    <button onclick="novaSenha()" class="btn-chamar">
+      Chamar Próxima Senha
+    </button>
+
+    <p>Dirija-se ao</p>
+    <div class="guiche" id="guiche">GUICHÊ 03</div>
+
+    <p class="mensagem">Agradecemos a sua espera.</p>
+  </div>
+
+  <!-- LADO DIREITO -->
+  <div class="right">
+    <h3>ÚLTIMAS CHAMADAS</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Senha</th>
+          <th>Guichê</th>
+        </tr>
+      </thead>
+      <tbody id="lista">
+        <tr><td>A122</td><td>02</td></tr>
+        <tr><td>B045</td><td>01</td></tr>
+        <tr><td>A121</td><td>03</td></tr>
+        <tr><td>C007</td><td>04</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- RODAPÉ -->
+<div class="footer">
+  <div>Acompanhe as chamadas no painel</div>
+  <div id="hora"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
